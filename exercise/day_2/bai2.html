@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng kết quả học tập học kỳ</title>
+</head>
+
+<body>
+    <h1>Bảng kết quả học tập học kỳ</h1>
+    <!-- Bảng kết quả học tập có id="result-table" -->
+    <table id="result-table" border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Anh</th>
+                <th>Điểm TB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Học sinh giỏi (Điểm TB >= 8) -> được gán class="excellent" -->
+            <tr class="excellent">
+                <td>1</td>
+                <td>Nguyễn Tiến Đạt</td>
+                <td>9.5</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>9.0</td> <!-- Điểm TB tính thủ công: (9.5 + 8.5 + 9.0) / 3 = 9.0 -->
+            </tr>
+            <!-- Học sinh không thuộc diện xuất sắc hay chưa đạt -> không cần gán class -->
+            <tr>
+                <td>2</td>
+                <td>Trần Minh Thư</td>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>7.5</td>
+                <td>7.0</td> <!-- Điểm TB tính thủ công: (7.0 + 6.5 + 7.5) / 3 = 7.0 -->
+            </tr>
+            <!-- Học sinh giỏi (Điểm TB >= 8) -> được gán class="excellent" -->
+            <tr class="excellent">
+                <td>3</td>
+                <td>Lê Hoàng Nam</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.0</td> <!-- Điểm TB tính thủ công: (8.0 + 8.0 + 8.0) / 3 = 8.0 -->
+            </tr>
+            <!-- Học sinh chưa đạt (Điểm TB < 5) -> được gán class="warning" -->
+            <tr class="warning">
+                <td>4</td>
+                <td>Phạm Quốc Bảo</td>
+                <td>4.0</td>
+                <td>3.5</td>
+                <td>4.5</td>
+                <td>4.0</td> <!-- Điểm TB tính thủ công: (4.0 + 3.5 + 4.5) / 3 = 4.0 -->
+            </tr>
+            <!-- Học sinh không thuộc diện xuất sắc hay chưa đạt -> không cần gán class -->
+            <tr>
+                <td>5</td>
+                <td>Vũ Thùy Linh</td>
+                <td>6.0</td>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>6.5</td> <!-- Điểm TB tính thủ công: (6.0 + 7.0 + 6.5) / 3 = 6.5 -->
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- Phần thống kê bên dưới bảng -->
+    <h2>Phần thống kê</h2>
+    <ul>
+        <li>Tổng số học sinh: <strong>5</strong> học sinh</li>
+        <li>Số học sinh giỏi: <u><strong>2</strong></u> học sinh (Điểm TB từ 8 trở lên)</li>
+        <li>Số học sinh chưa đạt: <em><strong>1</strong></em> học sinh (Điểm TB dưới 5)</li>
+    </ul>
+</body>
+
+</html>

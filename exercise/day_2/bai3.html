@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tham gia câu lạc bộ</title>
+</head>
+
+<body>
+    <!-- Yêu cầu trình bày: Đoạn mô tả ngắn ở trên form sử dụng strong, em, span -->
+    <p>
+        Chào mừng các bạn sinh viên đến với cổng đăng ký hoạt động ngoại khóa. Hãy tham gia ngay để hòa mình vào
+        <strong>môi trường câu lạc bộ năng động nhất</strong> của trường, nơi các bạn có thể <em>giao lưu học hỏi, phát
+            triển kỹ năng mềm và cháy hết mình</em> với đam mê. Mỗi CLB đều mang một <span>bản sắc cá tính độc đáo riêng
+            biệt</span> đang chờ bạn khám phá!
+    </p>
+    <hr>
+    <!-- Form đăng ký tham gia câu lạc bộ với id="club-form" -->
+    <form id="club-form" action="#" method="POST">
+        <!-- Thông tin cá nhân -->
+        <fieldset>
+            <legend><strong>Thông tin cá nhân</strong></legend>
+            <p>
+                <label for="fullname">Họ và tên:</label><br>
+                <!-- Trường bắt buộc: class="required-field" và thuộc tính required -->
+                <input type="text" id="fullname" name="fullname" class="required-field" required
+                    placeholder="Nhập đầy đủ họ tên...">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="required-field" required
+                    placeholder="vi_du@gmail.com">
+            </p>
+            <p>
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="tel" id="phone" name="phone" class="required-field" required
+                    placeholder="Nhập số điện thoại...">
+            </p>
+        </fieldset>
+        <br>
+        <!-- Giới tính -->
+        <fieldset>
+            <legend><strong>Giới tính</strong></legend>
+            <p>
+                <input type="radio" id="gender-male" name="gender" value="Nam" checked>
+                <label for="gender-male">Nam</label>
+                &nbsp;&nbsp;
+                <input type="radio" id="gender-female" name="gender" value="Nữ">
+                <label for="gender-female">Nữ</label>
+            </p>
+        </fieldset>
+        <br>
+        <!-- Chọn câu lạc bộ -->
+        <fieldset>
+            <legend><strong>Chọn câu lạc bộ</strong></legend>
+            <p>
+                <label for="club-select">Vui lòng chọn một câu lạc bộ bạn muốn tham gia:</label><br>
+                <select id="club-select" name="club" class="required-field" required>
+                    <option value="">-- Click để chọn CLB --</option>
+                    <option value="programming">CLB Lập trình</option>
+                    <option value="english">CLB Tiếng Anh</option>
+                    <option value="media">CLB Truyền thông</option>
+                    <option value="music">CLB Âm nhạc</option>
+                </select>
+            </p>
+        </fieldset>
+        <br>
+        <!-- Sở thích -->
+        <fieldset>
+            <legend><strong>Sở thích</strong></legend>
+            <p>Chọn các sở thích của bạn (có thể chọn nhiều):</p>
+            <p>
+                <input type="checkbox" id="hobby-reading" name="hobbies" value="Đọc sách">
+                <label for="hobby-reading">Đọc sách</label><br>
+
+                <input type="checkbox" id="hobby-sports" name="hobbies" value="Chơi thể thao">
+                <label for="hobby-sports">Chơi thể thao</label><br>
+
+                <input type="checkbox" id="hobby-travel" name="hobbies" value="Du lịch">
+                <label for="hobby-travel">Du lịch</label><br>
+
+                <input type="checkbox" id="hobby-tech" name="hobbies" value="Công nghệ">
+                <label for="hobby-tech">Công nghệ</label>
+            </p>
+        </fieldset>
+        <br>
+        <!-- Giới thiệu bản thân -->
+        <fieldset>
+            <legend><strong>Giới thiệu bản thân</strong></legend>
+            <p>
+                <label for="self-intro">Hãy viết một đoạn ngắn giới thiệu về bản thân bạn:</label><br>
+                <textarea id="self-intro" name="self_intro" rows="6" cols="50"
+                    placeholder="Sở trường, mong muốn khi tham gia CLB..."></textarea>
+            </p>
+        </fieldset>
+        <br>
+        <!-- Cam kết -->
+        <fieldset>
+            <legend><strong>Cam kết</strong></legend>
+            <p>
+                <input type="checkbox" id="agreement" name="agreement" class="required-field" required>
+                <label for="agreement">Tôi cam kết các thông tin trên là chính xác.</label>
+            </p>
+        </fieldset>
+        <br>
+        <!-- Nút chức năng: Gửi đăng ký và làm lại -->
+        <p>
+            <input type="submit" value="Gửi đăng ký">
+            &nbsp;&nbsp;
+            <input type="reset" value="Làm lại">
+        </p>
+    </form>
+</body>
+
+</html>
