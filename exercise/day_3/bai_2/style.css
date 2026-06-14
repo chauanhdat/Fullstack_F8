@@ -1,0 +1,43 @@
+/* Phần Navbar: */
+/* 1. Tất cả <a> nằm trong #navbar (bất kỳ cấp nào) có color: #333; text-decoration: none. */
+#navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 2. Chỉ <li> là con trực tiếp của #navbar > ul có display: inline-block; padding: 8px 16px -> menu cấp 1 nằm ngang. */
+#navbar>ul>li {
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+/* 3. Chỉ <a> bên trong menu cấp 2 (submenu) có color: red. Không được dùng class, không sửa HTML. */
+#navbar ul ul a {
+    color: red;
+}
+
+
+/* Phần Content */
+/* 1. Chỉ <p> là con trực tiếp của .content có border-left: 3px solid #2196F3; padding-left: 12px */
+.content>p {
+    border-left: 3px solid #2196F3;
+    padding-left: 12px;
+}
+
+/* 2. <p> đứng ngay liền sau <h2> có font-weight: bold; color: #1a1a2e. */
+.content>h2+p {
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+/* 3. Tất cả <p> ngang hàng phía sau <h2> trong .content có font-size: 1.05rem; color: #555. */
+.content>h2~p {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* 4. Cả <h2> lẫn tất cả <p> trong .content đều có font-family: 'Segoe UI', sans-serif. */
+.content h2,
+.content p {
+    font-family: 'Segoe UI', sans-serif;
+}

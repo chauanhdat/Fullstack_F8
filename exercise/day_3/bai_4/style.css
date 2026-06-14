@@ -1,0 +1,66 @@
+/* Phần Dahh sách */
+/* 1. <li> đầu tiên có color: #e53935; font-weight: bold */
+li:first-child {
+    color: #e53935;
+    font-weight: bold;
+}
+
+/* 2. <li> cuối cùng có color: #1565c0 */
+li:last-child {
+    color: #1565c0;
+}
+
+/* 3. Các mục lẻ (1, 3, 5) có background: #f5f5f5 */
+li:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+/* 4. Các mục chẵn (2, 4, 6) có background: #e8f4fd */
+li:nth-child(even) {
+    background: #e8f4fd;
+}
+
+/* 5. Tất cả <li> trừ cái cuối có border-bottom: 1px solid #dee2e6 */
+li:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* 6. Khi hover <li> thì background: #fff9c4; padding-left: 12px; transition: all 0.2s */
+li:hover {
+    background: #fff9c4;
+    padding-left: 12px;
+    transition: all 0.2s;
+}
+
+/* 7. Mỗi mục thứ 3 (3, 6, 9...) có font-style: italic */
+li:nth-child(3n) {
+    font-style: italic;
+}
+
+/* Phần Form */
+/* 1. Khi focus vào <input>, input đó có outline: none; border: 2px solid #2196F3; box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2) */
+input:focus {
+    outline: none;
+    border: 2px solid #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+/* 2. Input bị disabled có background: #f5f5f5; opacity: 0.6; cursor: not-allowed */
+input:disabled {
+    background: #f5f5f5;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* 3. Button khi hover có background: #1565c0; transform: translateY(-1px); transition: all 0.2s */
+button:hover {
+    background: #1565c0;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+/* 4. Khi checkbox #agree được tích, thẻ <span> đứng liền sau nó có color: #27ae60; font-weight: bold */
+#agree:checked+span {
+    color: #27ae60;
+    font-weight: bold;
+}

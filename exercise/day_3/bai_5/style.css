@@ -1,0 +1,42 @@
+/* 1. Chữ cái đầu tiên của .intro có font-size: 3.5rem; font-weight: bold; color: #e53935; float: left; line-height: 1; margin-right: 4px (hiệu ứng "drop cap"). */
+.intro::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #e53935;
+    float: left;
+    line-height: 1;
+    margin-right: 4px;
+}
+
+/* 2. Dòng đầu tiên của .intro có font-style: italic; color: #555. */
+.intro::first-line {
+    font-style: italic;
+    color: #555;
+}
+
+/* 3. Khi bôi đen văn bản trong article, vùng chọn có background: #ffd700; color: #1a1a1a. */
+article ::selection {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+/* 4. Tất cả <input> có placeholder màu #aaa; font-style: italic. */
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* 5. Khi focus vào <input>, placeholder chuyển sang màu red. */
+input:focus::placeholder {
+    color: red;
+}
+
+/* 6. Thêm ký tự “ đứng trước .quote (dùng content: "“ "). */
+.quote::before {
+    content: "“ ";
+}
+
+/* 7. Thêm ký tự ” đứng sau .quote (dùng content: " ”"). */
+.quote::after {
+    content: " ”";
+}

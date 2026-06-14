@@ -1,0 +1,50 @@
+/* 1. Đặt box-sizing: border-box; margin: 0; padding: 0 cho tất cả phần tử trên trang. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Tất cả thẻ <h1> có màu chữ #1a1a2e, font-size: 2rem. */
+h1 {
+    color: #1a1a2e;
+    font-size: 2rem;
+}
+
+/* 3. Tất cả thẻ <p> có màu chữ #555 và line-height: 1.6. */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 4. Phần tử có class .note có background: #fff3cd; padding: 8px 12px; border-radius: 4px. */
+.note {
+    background: #fff3cd;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* 5. Phần tử có class .tag có display: inline-block; padding: 4px 10px; background: #e0e0e0; border-radius: 12px; font-size: 0.85rem; margin: 4px. */
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin: 4px;
+}
+
+/* 6. Phần tử vừa có .tag vừa có .highlight thì background: #e53935; color: white. */
+.tag.highlight {
+    background: #e53935;
+    color: white;
+}
+
+/* 7. Phần tử có id="card" có border: 2px solid #ccc; padding: 20px; border-radius: 8px; margin-top: 24px; max-width: 480px. */
+#card {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
+    max-width: 480px;
+}
