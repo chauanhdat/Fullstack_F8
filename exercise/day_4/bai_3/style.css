@@ -1,0 +1,102 @@
+/* 1. Trang web có màu nền vàng rất nhạt */
+body {
+    background-color: #fefdf0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 2. Hộp .discount-box có màu nền trắng */
+.discount-box {
+    background-color: #ffffff;
+
+    /* 3. Hộp có viền màu cam */
+    border: 3px solid #f97316;
+
+    /* 4. Hộp có bo góc */
+    border-radius: 16px;
+
+    max-width: 460px;
+    width: 100%;
+    padding: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* 5. Tiêu đề có màu cam đậm */
+.discount-box h2 {
+    color: #c2410c;
+
+    /* 6. Tiêu đề được căn giữa */
+    text-align: center;
+
+    /* 7. Tiêu đề có kích thước lớn */
+    font-size: 26px;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* 8. Đoạn .main-text được căn giữa */
+.main-text {
+    text-align: center;
+
+    /* 9. Đoạn .main-text có màu chữ dễ đọc */
+    color: #374151;
+
+    line-height: 1.6;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* 10. Khối .discount-info có màu nền riêng */
+.discount-info {
+    background-color: #fff7ed;
+
+    /* 11. Khối .discount-info có viền nét đứt */
+    border: 1px dashed #ea580c;
+
+    /* 12. Khối .discount-info được bo góc */
+    border-radius: 8px;
+
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+/* 13. Các dòng trong .discount-info có chữ in đậm */
+.discount-info p {
+    font-weight: bold;
+    color: #ea580c;
+    font-size: 14.5px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.discount-info p:first-child {
+    margin-top: 0;
+}
+
+.discount-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* 14. Dòng .warning có màu đỏ */
+.warning {
+    color: #dc2626;
+
+    /* 15. Dòng .warning được căn giữa */
+    text-align: center;
+
+    /* 16. Dòng .warning được viết hoa bằng CSS */
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 13.5px;
+    margin: 0;
+}

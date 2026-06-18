@@ -1,0 +1,86 @@
+/* 1. Trang web có màu nền sáng */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 2. Hộp .course-box có màu nền trắng */
+.course-box {
+    background-color: #ffffff;
+
+    /* 3. Hộp có viền màu xanh */
+    border: 3px solid #0056b3;
+
+    /* 4. Hộp được bo góc */
+    border-radius: 12px;
+
+    max-width: 460px;
+    width: 100%;
+    padding: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* 5. Tiêu đề h2 được căn giữa */
+.course-box h2 {
+    text-align: center;
+
+    /* 6. Tiêu đề có màu nổi bật */
+    color: #0056b3;
+
+    /* 7. Tiêu đề được viết hoa bằng CSS */
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+/* 8. Dòng .subtitle được căn giữa */
+.subtitle {
+    text-align: center;
+
+    /* 9. Dòng .subtitle có màu xám và chữ nghiêng */
+    color: #6c757d;
+    font-style: italic;
+
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+/* 10. Đoạn .description có màu chữ dễ đọc */
+.description {
+    color: #333333;
+
+    /* 11. Đoạn .description có giãn dòng hợp lý */
+    line-height: 1.6;
+
+    font-size: 14.5px;
+    margin-bottom: 24px;
+}
+
+/* 12. Phần .note có màu nền riêng */
+.note {
+    background-color: #e8f4fd;
+
+    /* 13. Phần .note có viền riêng */
+    border: 1px dashed #0056b3;
+
+    /* 14. Phần .note có chữ in đậm và căn giữa */
+    font-weight: bold;
+    text-align: center;
+
+    color: #0056b3;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 0;
+    font-size: 13.5px;
+}
