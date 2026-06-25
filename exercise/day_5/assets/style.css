@@ -1,0 +1,153 @@
+/* Vùng chứa toàn bộ nội dung, giới hạn chiều rộng và căn giữa */
+.container {
+    max-width: 1440px;
+    /* Độ rộng tối đa của nội dung theo chuẩn thiết kế Figma */
+    margin: 0 auto;
+    /* Tự động chia đều lề trái và phải để căn giữa vùng chứa ra giữa màn hình */
+    padding: 80px 16px;
+    /* Tạo khoảng trống 80px ở trên/dưới và 16px ở trái/phải để nội dung không chạm mép màn hình */
+}
+
+/* Phần Tiêu Đề Chính (Header) */
+.section-header {
+    text-align: center;
+    /* Căn giữa toàn bộ văn bản bên trong vùng tiêu đề */
+    margin-bottom: 60px;
+    /* Tạo khoảng cách 60px với phần nội dung lưới (grid) bên dưới */
+}
+
+/* Định dạng cho dòng chữ phụ (subtitle) "BECAUSE WE LOVE COFFEE" */
+.section-header .subtitle {
+    display: block;
+    /* Hiển thị dạng khối để tự động xuống dòng, nằm độc lập trên một hàng */
+    font-family: 'Roboto';
+    /* Sử dụng font chữ Roboto */
+    font-size: 16px;
+    /* Kích thước chữ là 16px */
+    font-weight: 400;
+    /* Độ đậm chữ ở mức bình thường (Regular) */
+    line-height: 100%;
+    /* Chiều cao của dòng bằng đúng 100% kích thước chữ (16px) */
+    color: #BB7E52;
+    /* Áp dụng màu nâu đất theo chuẩn thiết kế */
+    text-transform: uppercase;
+    /* Chuyển tất cả văn bản thành chữ in hoa */
+    letter-spacing: 0;
+    /* Khoảng cách giữa các chữ cái là 0 (mặc định) */
+    margin-bottom: 12px;
+    /* Tạo khoảng cách 12px so với tiêu đề chính phía dưới */
+}
+
+/* Định dạng cho tiêu đề chính "About Us" */
+.section-header .title {
+    font-family: 'Roboto';
+    /* Sử dụng font chữ Roboto */
+    font-size: 32px;
+    /* Kích thước chữ lớn 32px */
+    font-weight: 700;
+    /* In đậm chữ (Bold) */
+    line-height: 100%;
+    /* Chiều cao của dòng bằng đúng kích thước chữ */
+    letter-spacing: 0;
+    /* Khoảng cách giữa các chữ cái là 0 */
+    color: #3A3A3A;
+    /* Áp dụng màu xám đậm cho tiêu đề */
+}
+
+/* Phần Lưới Nội Dung (Grid Layout) */
+.grid-layout {
+    display: grid;
+    /* Kích hoạt chế độ hiển thị dạng lưới (Grid) */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tạo ra 3 cột có chiều rộng bằng nhau (mỗi cột chiếm 1 phần - 1 fraction) */
+    gap: 0 32px;
+    /* Khoảng cách giữa các hàng là 0px (dính liền nhau), khoảng cách giữa các cột là 32px */
+}
+
+/* Định dạng chung cho mỗi phần tử (khối ảnh hoặc khối chữ) nằm trong lưới */
+.grid-item {
+    display: flex;
+    /* Kích hoạt Flexbox để dễ dàng căn chỉnh nội dung bên trong khối */
+    flex-direction: column;
+    /* Sắp xếp các nội dung bên trong theo chiều dọc (từ trên xuống dưới) */
+    justify-content: center;
+    /* Căn giữa nội dung theo trục dọc (nếu có không gian dư) */
+    align-items: center;
+    /* Căn giữa nội dung theo trục ngang */
+    text-align: center;
+    /* Căn giữa đoạn văn bản bên trong */
+    padding: 30px;
+    /* Thêm khoảng trống 30px xung quanh nội dung (áp dụng chung ban đầu) */
+}
+
+/* Các phần tử lưới dành riêng để chứa hình ảnh */
+.grid-item.img-item {
+    padding: 0;
+    /* Xóa khoảng trống mặc định để hình ảnh có thể tràn sát mép (tràn viền) */
+    overflow: hidden;
+    /* Cắt bỏ phần hình ảnh bị tràn ra ngoài khung chứa (nếu có) */
+    aspect-ratio: 1 / 1;
+    /* Thiết lập tỷ lệ khung hình 1:1, giúp khung luôn là một hình vuông hoàn hảo */
+}
+
+/* Định dạng thẻ ảnh (img) nằm bên trong khối chứa ảnh */
+.grid-item.img-item img {
+    width: 100%;
+    /* Chiều rộng của ảnh sẽ chiếm trọn 100% khung chứa vuông */
+    height: 100%;
+    /* Chiều cao của ảnh cũng chiếm 100% khung chứa vuông */
+    object-fit: cover;
+    /* Đảm bảo hình ảnh lấp đầy khung mà không bị méo tỷ lệ (ảnh có thể bị cắt một phần nhỏ nếu tỷ lệ gốc khác 1:1) */
+}
+
+/* Các phần tử lưới dành riêng để chứa đoạn văn bản (text) */
+.grid-item.text-item {
+    background-color: #ffffff;
+    /* Cài đặt nền màu trắng cho khối chữ */
+    width: 100%;
+    /* Chiều rộng chiếm tối đa cột lưới */
+    max-width: 448px;
+    /* Giới hạn chiều rộng tối đa là 448px theo đúng chuẩn thiết kế Figma */
+    padding: 0;
+    /* Gỡ bỏ khoảng trống bên trong (padding) */
+    margin: auto;
+    /* Tự động căn giữa khối text này nếu cột lưới thực tế rộng hơn 448px */
+}
+
+/* Định dạng dòng chữ phụ (subtitle) nằm trong các khối text (VD: "OUR MISSION") */
+.grid-item.text-item .item-subtitle {
+    font-family: 'Roboto';
+    /* Sử dụng font chữ Roboto */
+    font-size: 16px;
+    /* Kích thước chữ 16px */
+    font-weight: 400;
+    /* Độ đậm chữ bình thường (Regular) */
+    line-height: 100%;
+    /* Chiều cao dòng bằng 100% kích thước chữ */
+    color: #BB7E52;
+    /* Màu nâu đất theo thiết kế */
+    text-transform: uppercase;
+    /* Viết in hoa toàn bộ các chữ cái */
+    letter-spacing: 0;
+    /* Không có khoảng cách phụ giữa các chữ cái */
+    margin-bottom: 15px;
+    /* Đẩy đoạn văn bản tiêu đề phía dưới cách ra 15px */
+}
+
+/* Định dạng đoạn văn bản tiêu đề nằm trong khối text (VD: "It all began...") */
+.grid-item.text-item .item-title {
+    font-family: 'Roboto';
+    /* Sử dụng font chữ Roboto */
+    font-size: 32px;
+    /* Kích thước chữ lớn 32px */
+    font-weight: 700;
+    /* In đậm chữ (Bold) */
+    line-height: 42px;
+    /* Chiều cao mỗi dòng là 42px, giúp các dòng cách nhau rộng rãi và dễ nhìn hơn */
+    letter-spacing: 0;
+    /* Không có khoảng cách phụ giữa các chữ cái */
+    text-align: center;
+    /* Đảm bảo chữ luôn được căn giữa khối */
+    color: #3A3A3A;
+    /* Màu xám đen đậm cho chữ */
+}

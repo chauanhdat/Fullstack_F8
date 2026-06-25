@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    /* Xóa khoảng cách lề bên ngoài (margin) mặc định của tất cả các thẻ */
+    padding: 0;
+    /* Xóa khoảng cách lề bên trong (padding) mặc định của tất cả các thẻ */
+    box-sizing: border-box;
+    /* Đảm bảo kích thước tổng thể của thẻ được tính bao gồm cả viền (border) và padding, giúp tránh vỡ giao diện */
+}
+
+html,
+body {
+    width: 100%;
+    /* Chiều rộng thân trang web chiếm 100% màn hình */
+    font-family: 'Roboto';
+    /* Sử dụng font chữ Roboto làm mặc định cho toàn bộ nội dung text trên trang web */
+    color: #333;
+    /* Màu chữ mặc định chung là màu xám đậm */
+    background-color: #ffffff;
+    /* Nền trang web màu trắng */
+}
+
+/* Định dạng cơ bản cho hình ảnh để không bị tràn và có tính phản hồi (responsive) */
+img {
+    max-width: 100%;
+    /* Đảm bảo ảnh không bao giờ phình to hơn kích thước thẻ cha chứa nó */
+    height: auto;
+    /* Chiều cao tự động tỷ lệ thuận với chiều rộng gốc của ảnh */
+    display: block;
+    /* Chuyển thẻ ảnh (mặc định là inline) thành dạng khối (block) để loại bỏ các khoảng trống thừa không mong muốn bên dưới viền ảnh */
+}
