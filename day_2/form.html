@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">Cấu trúc sử dụng form</a>
+    <br>
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">Các loại thẻ input</a> -->
+
+    <h2>Form cơ bản</h2>
+    <!-- Khi nhấn submit, dữ liệu sẽ được gửi tới trang process-data.html
+    <form action="/process-data.html" method="post"> 
+    </form> -->
+    <form action="">
+        <!-- Nhập tên đăng nhập -->
+        <!-- for với id trong thẻ <label>,<input> phải trùng nhau -->
+        <div>
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập">
+        </div>
+
+        <!-- Nhập email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email">
+        </div>
+
+        <!-- Nhập mật khẩu -->
+        <div>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+        </div>
+
+        <!-- Nhập file -->
+        <div>
+            <label for="avatar">Chọn file:</label>
+            <input type="file" id="avatar" name="avatar">
+        </div>
+
+        <!-- Giới tính -->
+        <div>
+            <label>Giới tính:</label>
+            <!-- Những kiểu lựa chọn lưu ý phải có value trong thẻ <input> -->
+            <label><input type="radio" name="gender" value="male">Nam</label>
+            <label><input type="radio" name="gender" value="female">Nữ</label>
+            <label><input type="radio" name="gender" value="unknow">Không biết</label>
+        </div>
+
+        <!-- Sở thích -->
+        <div>
+            <label>Chọn sở thích:</label>
+            <label><input type="checkbox" name="like" value="coffee">Coffee</label>
+            <label><input type="checkbox" name="like" value="read">Read</label>
+            <label><input type="checkbox" name="like" value="code">Code</label>
+        </div>
+
+        <!-- Chọn thành phố -->
+        <div>
+            <label for="city">Chọn thành phố:</label>
+            <!-- <a href="https://www.w3schools.com/tags/tag_select.asp">Thẻ select</a> -->
+            <select name="city" id="city">
+                <option value="">Chọn thành phố</option>
+                <option value="nhatrang">Nha trang</option>
+                <option value="saigon">Sài gòn</option>
+                <option value="hanoi">Hà nội</option>
+            </select>
+        </div>
+
+        <!-- Tin nhắn -->
+        <div>
+            <label for="massage">Tin nhắn:</label>
+            <!-- <a href="https://www.w3schools.com/tags/tag_textarea.asp">Thẻ <textarea> </a> -->
+            <textarea name="massage" id="massage" placeholder="Vui lòng nhập tin nhắn ..." rows="5"
+                cols="30"></textarea>
+        </div>
+        <!-- Nút gửi form -->
+        <button type="submit">Đăng nhập</button>
+    </form>
+</body>
+
+</html>

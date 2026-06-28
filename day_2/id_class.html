@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id và class</title>
+    <style>
+        /* Định dạng cho ID: Bắt đầu bằng dấu thăng (#) trước tên ID */
+        #site-title {
+            color: #2c3e50;
+            font-size: 28px;
+        }
+
+        #submit-btn {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        #cancel-btn {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Định dạng cho Class: Bắt đầu bằng dấu chấm (.) trước tên Class */
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .highlight-box {
+            background-color: #f1c40f;
+            /* Tạo màu nền vàng nổi bật */
+        }
+
+        .text-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="https://www.w3schools.com/html/html_id.asp">Thuộc tính id</a> -->
+    <!-- <a href="https://www.w3schools.com/html/html_classes.asp">Thuộc tính class</a> -->
+    <header id="main-header">
+        <h1 id="site-title">Welcome to HTML Learning</h1>
+    </header>
+
+    <div class="card highlight-box">
+        <p class="text-content">This is the first paragraph with a highlight background.</p>
+    </div>
+
+    <div class="card">
+        <p class="text-content">This is the second paragraph with standard styling.</p>
+    </div>
+
+    <button id="submit-btn" class="btn">Submit</button>
+    <button id="cancel-btn" class="btn">Cancel</button>
+</body>
+
+</html>
