@@ -1,0 +1,42 @@
+/* Chọn TẤT CẢ mọi phần tử trong hộp Sandbox */
+/* Nền vàng nhạt */
+/* Chữ xám đậm */
+/* Viền nét đứt */
+/* * {
+    background-color: #fef08a;
+    color: #1e293b;
+    border: 1px dashed #e2e8f0;
+} */
+
+/* Định dạng riêng cho tất cả thẻ <p> */
+/* Chữ đổi sang màu xanh dương */
+/* Độ dày chữ trung bình */
+/* Giãn cách chữ nhẹ */
+p {
+    color: #2563eb;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Định dạng các phần tử có class="highlight-text" */
+/* Chữ màu xanh lá cây đậm */
+/* Nền xanh lá cây nhạt */
+/* Tạo khoảng đệm trong */
+/* Bo tròn nhẹ góc */
+.highlight-text {
+    color: #15803d;
+    background-color: #dcfce7;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Định dạng duy nhất cho phần tử có id="unique-card" */
+/* Nền màu tím nhạt */
+/* Viền đổi sang màu tím */
+/* Tăng độ dày viền */
+#unique-card {
+    background-color: #f3e8ff;
+    border-color: #a855f7;
+    border-width: 2px;
+    box-shadow: 0 4px 6px -1px rgba(168, 85, 247, 0.2);
+}

@@ -1,0 +1,41 @@
+/* 1. Bộ chọn Tồn tại Thuộc tính [attr] */
+[disabled] {
+    opacity: 0.5;
+    border: 2px solid #ef4444;
+    cursor: not-allowed;
+    background-color: #fef2f2;
+}
+
+/* 2. Bộ chọn Giá trị Chính xác [attr="value"] */
+[type="password"] {
+    border: 2px solid #3b82f6;
+    background-color: #eff6ff;
+    font-weight: bold;
+}
+
+/* 3. Bộ chọn Bắt đầu Bằng [attr^="value"] */
+[href^="https"] {
+    color: #059669;
+    font-weight: 600;
+    background-color: #ecfdf5;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* 4. Bộ chọn Kết thúc Bằng [attr$="value"] */
+[href$=".pdf"] {
+    color: #7c3aed;
+    background-color: #f5f3ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #7c3aed;
+}
+
+/* 5. Bộ chọn Chứa Chuỗi Ký tự [attr*="value"] */
+[href*="google"] {
+    color: #db2777;
+    background-color: #fdf2f8;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: underline dashed;
+}

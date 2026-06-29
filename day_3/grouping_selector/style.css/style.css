@@ -1,0 +1,43 @@
+/* ❌ Cực kỳ tốn công sức & lặp lại code: */
+
+h3 {
+    font-family: 'Courier New', monospace;
+    color: #b91c1c;
+    /* Đỏ */
+}
+
+h4 {
+    font-family: 'Courier New', monospace;
+    color: #b91c1c;
+    /* Đỏ */
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    color: #b91c1c;
+    /* Đỏ */
+}
+
+/* ✅ Tối ưu tuyệt vời với dấu phẩy: */
+
+h3,
+h4,
+p {
+    font-family: 'system-ui', sans-serif;
+    color: #0f172a;
+    /* Xám đậm */
+}
+
+/* ✅ Gộp chung các phần tử có kiểu dáng giống nhau: */
+
+#badge-promo,
+.info-tag {
+    background-color: #f5f3ff;
+    /* Nền tím cực nhạt */
+    color: #6d28d9;
+    /* Chữ tím đậm */
+    border: 1px solid #ddd6fe;
+    /* Viền tím nhạt */
+    padding: 4px 10px;
+    border-radius: 6px;
+}

@@ -1,0 +1,52 @@
+/* LỚP GIẢ :hover - Khi di chuột qua nút */
+.sb-btn:hover {
+    background-color: #4f46e5;
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4);
+}
+
+/* LỚP GIẢ :focus - Khi nhấp chuột vào ô input */
+.sb-input:focus {
+    border-color: #ec4899;
+    background-color: #fff1f2;
+    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.25);
+}
+
+/* LỚP GIẢ :nth-child(even) - Áp dụng cho dòng chẵn (2, 4...) */
+.sb-item:nth-child(even) {
+    background-color: #f0fdf4;
+    color: #166534;
+    font-weight: 600;
+}
+
+/* PHẦN TỬ GIẢ ::before & ::after - Chèn nội dung ảo vào trước/sau */
+.sb-tip::before {
+    content: "💡 BẠN CÓ BIẾT: ";
+    /* Thêm tiêu đề gợi ý */
+    color: #d97706;
+    /* Chữ màu vàng cam */
+    font-weight: bold;
+}
+
+.sb-tip::after {
+    content: " (đã được kiểm chứng) ✨";
+    font-style: italic;
+    color: #94a3b8;
+}
+
+/* PHẦN TỬ GIẢ ::placeholder - Tạo phong cách cho chữ gợi ý */
+.sb-input::placeholder {
+    color: #f43f5e;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* PHẦN TỬ GIẢ ::first-letter - Chữ hoa đầu dòng (Drop Cap) */
+.sb-paragraph::first-letter {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #4f46e5;
+    float: left;
+    line-height: 0.85;
+    margin-right: 8px;
+}
